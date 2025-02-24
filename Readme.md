@@ -66,3 +66,21 @@ Follow the steps below to set up the framework:
 Install Appium globally using npm:
 ```bash
 npm install -g appium
+
+### **3. Install Java Development Kit (JDK)**
+- Download and install JDK from Oracle.
+- Set up JAVA_HOME and update PATH as shown in the Prerequisites section.
+
+### 4. Install Android Studio
+- Download and install Android Studio from developer.android.com.
+- Set the ANDROID_HOME environment variable as shown in the Prerequisites section.
+
+### 5. Install Python Libraries
+Install the required Python libraries by running:
+
+```pip install -r requirements.txt
+
+### 6. Set Up Robot Framework
+- Install Robot Framework and AppiumLibrary:
+```pip install robotframework
+```pip install robotframework-appiumlibrary
