@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    stages {
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    sh 'pip install -r requirements.txt'
+                }
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                script {
+                    sh 'robot tests/regression/regression_test.robot'
+                    sh 'robot tests/sanity/sanity_test.robot'
+                    sh 'robot tests/smoke/smoke_test.robot'
+                }
+            }
+        }
+        stage('Publish Reports') {
+            steps {
+                publishHTML(target: [
+                    reportName: 'Robot Framework Report',
+                    reportDir: 'reports',
+                    reportFiles: 'index.html'
+                ])
+            }
+        }
+    }
+}

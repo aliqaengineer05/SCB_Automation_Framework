@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-02-23T22:33:04.093479" rpa="false" schemaversion="5">
+<suite id="s1" name="Regression Test" source="C:\Users\HP\PycharmProjects\SCB_Automation_Framework\tests\regression\regression_test.robot">
+<test id="s1-t1" name="Regression Test" line="15">
+<kw name="start_application">
+<msg time="2025-02-23T22:33:04.375955" level="FAIL">No keyword with name 'start_application' found.</msg>
+<var>${driver}</var>
+<arg>${APP_PATH}</arg>
+<arg>${DEVICE_NAME}</arg>
+<arg>${PLATFORM_VERSION}</arg>
+<status status="FAIL" start="2025-02-23T22:33:04.375864" elapsed="0.000172">No keyword with name 'start_application' found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-23T22:33:04.376617" elapsed="0.000063"/>
+</kw>
+<doc>This test case launches and closes the app on Android device.</doc>
+<status status="FAIL" start="2025-02-23T22:33:04.370982" elapsed="0.006192">No keyword with name 'start_application' found.</status>
+</test>
+<status status="FAIL" start="2025-02-23T22:33:04.097340" elapsed="0.281217"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Regression Test" id="s1" pass="0" fail="1" skip="0">Regression Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-23T22:33:04.368705" level="ERROR">Error in file 'C:\Users\HP\PycharmProjects\SCB_Automation_Framework\tests\regression\regression_test.robot' on line 4: Importing library 'C:\Users\HP\PycharmProjects\SCB_Automation_Framework\libs\custom_appium_keywords.py' failed: ModuleNotFoundError: No module named 'appium.webdriver.common.mobileby'
+Traceback (most recent call last):
+  File "C:\Users\HP\PycharmProjects\SCB_Automation_Framework\libs\custom_appium_keywords.py", line 3, in &lt;module&gt;
+    import appium.webdriver.common.mobileby
+PYTHONPATH:
+  C:\Users\HP\PycharmProjects\SCB_Automation_Framework\libs
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\HP\AppData\Local\Programs\Python\Python313
+  C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
